@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lal Bagh Botanical Garden</title>
+
+<style>
+    
+
+body {
+ font-family: Arial, sans-serif;
+ background: black;
+ color: white;
+ margin: 0;
+ padding: 0;
+ }
+
+.navbar {
+ background: black;
+ padding: 15px 20px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ border-bottom: 2px solid #556b2f;
+ }
+
+.navbar img {
+width:50px;
+height:auto;
+ }
+
+.nav-links {
+display:flex;
+gap:25px;
+}
+
+.navbar a {
+color:white;
+text-decoration:none;
+transition:color 0.3s;
+}
+.navbar a:hover {
+color:#556b2f;
+}
+.banner {
+background:url('images/b.jpg');background-repeat:no-repeat;background-size:100%;
+height:500px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+
+.about {
+padding:40px 20px;
+display:flex;
+gap:30px;
+        }
+
+.about-text {
+width:70%;
+ }
+
+.about-img {
+ width:35%;
+        }
+
+.about-img img {
+width: 100%;
+}
+
+
+.visit {
+ padding:40px 20px;
+ background:url('images/b6.jpg');background-repeat:no-repeat;background-size:cover;
+}
+
+.info-boxes {
+display:flex;
+justify-content:center;
+gap:20px;
+margin-top:30px;
+}
+
+.info-box {
+background:black;
+color:white;
+padding:20px;
+width:250px;
+text-align:center;
+text-decoration:none;
+transition:background 0.3s;
+}
+
+.info-box:hover{
+background:#556b2f;
+}
+
+
+.news {
+padding:40px 20px;
+}
+
+.cards {
+display:flex;
+flex-direction:row;
+gap:20px;
+margin-top:30px;
+ }
+
+.card{
+border:3px solid #556b2f;
+padding:15px;
+ }
+
+.card img {
+width:100%;
+max-height:250px;
+}
+
+.gallery {
+padding: 40px 20px;
+}
+
+.photo-slider {
+height:500px;
+animation:slide 25s infinite;
+background-size:cover;
+}
+
+@keyframes slide {
+10% {background-image:url('images/b14.jpg');}
+20% {background-image:url('images/b7.jpg');}
+30% {background-image:url('images/b15.jpg');}
+40% {background-image:url('images/b13.jpg');}
+50% {background-image:url('images/b10.jpg');}
+60% {background-image:url('images/b4.jpg');}
+70% {background-image:url('images/b3.jpg');}
+80% {background-image:url('images/b11.jpg');}
+90% {background-image:url('images/b9.jpg');}
+100% {background-image:url('images/b.jpg');}
+        }
+
+footer {
+background:#556b2f;
+color:white;
+padding:40px 20px;
+text-align:center;
+}
+
+.link {
+display:block;
+ color:white;
+text-decoration:none;
+margin-top:20px;
+ transition:color 0.3s;
+}
+
+.link:hover {
+ color:#556b2f;
+}
+
+@media (max-width: 768px) {
+ .navbar {
+ flex-direction:column;
+ gap:15px;
+text-align:center;
+ }
+
+.about {
+flex-direction: column;
+ }
+
+.about-text, .about-img {
+  width: 100%;
+}
+
+.info-boxes {
+ flex-direction:column;
+ align-items:center;
+}
+
+.info-box {
+width: 100%;
+}
+            
+.banner {
+height:200px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+
+
+.photo-slider {
+ height: 250px;
+}
+
+.card img {
+ max-height: 150px;
+}
+ }
+</style>
+</head>
+<body>
+ 
+<nav class="navbar">
+<img src="images/logo.png" alt="Garden Logo">
+<div class="nav-links">
+<a href="#about">ABOUT</a>
+<a href="#visit">VISIT</a>
+<a href="#news">NEWS</a>
+<a href="#gallery">GALLERY</a>
+<a href="#contact">CONTACT</a>
+</div>
+</nav>
+
+
+<section class="banner">
+<h1>BOTANICAL GARDEN</h1>
+<h2>OF BANGALORE</h2>
+<p>Welcome to Lal Bagh - A Heritage Garden</p>
+</section>
+
+    
+<section class="about" id="about">
+<div class="about-text">
+ <h2>About Us</h2>
+ <p>Established in 1760, Lal Bagh Botanical Garden is a historic garden featuring rare plants, ancient trees, and stunning glass houses. Spread over 240 acres, it serves as both a conservation center and popular tourist attraction.</p>
+ <a href="#" class="link">Learn More →</a>
+ </div>
+<div class="about-img">
+<img src="images/b8.jpg" alt="Garden View">
+ </div>
+ </section>
+
+<section class="visit" id="visit">
+<h2>Plan Your Visit</h2>
+<p>Open daily from 6:00 AM to 7:00 PM</p>
+<div class="info-boxes">
+<a href="#tickets" class="info-box">
+<h3>TICKETS</h3>
+p>Adults: ₹50<br>Children: Free</p>
+</a>
+<a href="#location" class="info-box">
+<h3>LOCATION</h3>
+<p>Mavalli, Bengaluru<br>Karnataka 560004</p>
+ </a>
+ <a href="#rules" class="info-box">
+ <h3>RULES</h3>
+<p>No plastic<br>No smoking</p>
+ </a>
+ </div>
+</section>
+
+  
+<section class="news" id="news">
+ <h2>Latest Updates</h2>
+<div class="cards">
+<div class="card">
+<img src="images/b16.jpg" alt="Flower Show">
+<h3>Flower Show 2024</h3>
+ <p>Annual flower show dates announced for August</p>
+ </div>
+<div class="card">
+ <img src="images/b14.jpg" alt="New Plants">
+  <h3>New Plant Species</h3>
+ <p>Discover our latest botanical additions</p>
+ </div>
+ </div>
+</section>
+
+ 
+ <section class="gallery" id="gallery">
+<h2>Photo Gallery</h2>
+ <div class="photo-slider"></div>
+<a href="#full-gallery" class="link">See Full Gallery →</a>
+ </section>
+
+<footer id="contact">
+<h2>Contact Us</h2>
+ <p>Email: info@lalbagh.gov.in<br>
+Phone: +91 80 2657 0073<br>
+Address: Lalbagh Road, Bengaluru</p>
+<p>© 2025 Lal Bagh Botanical Garden</p>
+</footer>
+</body>
+</html>
