@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disneyland</title>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+ body {
+background-color:black;
+ color: white;
+font-family: 'Poppins', sans-serif; 
+margin: 0;
+padding: 0;
+ }
+nav {
+display: flex;
+justify-content: space-between;
+padding: 20px;
+background: transparent;
+ }
+ nav a {
+color: white;
+text-decoration: none;
+ margin: 0 15px;
+ }
+.banner {
+background-image: url('images/ddl.jpg');
+background-repeat: no-repeat;
+background-size:100%;   
+height: 600px;
+ display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.banner h1 {
+ font-family: 'Poppins', sans-serif;
+ font-size: 70px;
+ color: white;
+ }
+.banner p {
+  font-family: 'Poppins', sans-serif; 
+font-size: 20px;
+color: white;
+ }
+.about, .tickets, .fantasy, .advantage {
+padding: 50px;
+ }
+.row {
+  display: flex;
+justify-content: space-around;
+ margin: 20px 0;
+    }
+.ticket {
+text-align: center;
+border-radius: 10px;
+ overflow: hidden;
+ background:#d77a90;
+padding: 10px;
+ width: 25%;
+ }
+.ticket img {
+width: 100%;
+ }
+.footer {
+text-align: center;
+padding: 20px;
+ background-color:#d77a90;
+ }
+.box {
+ background:#6485ab ;
+padding: 10px;
+ margin: 10px;
+border-radius: 10px;
+text-align: center;
+ width: 30%;
+display: inline-block;
+ }
+ .advantage {
+text-align: center; 
+ }
+
+      
+@media (max-width: 768px) {
+   nav {
+ flex-direction:row;
+align-items: center;
+ }
+
+ nav a {
+display:block;
+margin: 10px 0;
+}
+.banner { height:200px;}
+.banner h1 { font-size:30px;}
+.banner p{ font-size: 15px;}
+.about{ 
+margin:0px 0;
+padding:5%;
+}
+.row {
+ flex-direction:column; 
+ align-items: center; 
+  }
+.ticket, .box {
+ width:100%;
+margin:10px 0;} 
+
+.footer { 
+margin-bottom:20px;
+padding:15px;}
+
+}
+ </style>
+</head>
+<body>
+
+<nav>
+    <div style="font-family: 'Poppins', sans-serif; font-size: 24px;">DISNEYLAND</div>
+    <div>
+        <a href="#about">About Disneyland</a>
+        <a href="#tickets">Tickets</a>
+        <a href="#places">Fantasy Land</a>
+    </div>
+</nav>
+
+<div class="banner">
+    <h1>MAGIC TIME BEGINS!</h1>
+    <p>If you are looking for the happiest place on the planet, here it is.</p>
+</div>
+
+<div class="about" id="about">
+    <h2 style="font-family: 'Poppins', sans-serif;">About Disneyland</h2>
+    <p style="font-family: 'Poppins', sans-serif;">Disneyland, known as "The Happiest Place on Earth," is a world-famous theme park created by Walt Disney and opened in 1955 in Anaheim, California. It features iconic attractions like Sleeping Beauty Castle, Space Mountain, and Pirates of the Caribbean, along with themed lands that bring Disney stories to life. Visitors can enjoy thrilling rides, enchanting parades, dazzling fireworks, and meet beloved Disney characters. With its magical atmosphere, delicious food, and unforgettable experiences, Disneyland continues to be a dream destination for people of all ages worldwide. Disneyland is a magical place where dreams come true. Experience the joy and wonder of the happiest place on Earth.</p>
+</div>
+
+<div class="tickets" id="tickets">
+    <h2 style="font-family: 'Poppins', sans-serif;">TICKETS</h2>
+    <div class="row">
+<div class="ticket">
+            <img src="images/m.jpg">
+            <p style="font-family: 'Poppins', sans-serif;">One Day</p>
+        
+        </div>
+        <div class="ticket">
+            <img src="images/mm.jpg">
+            <p style="font-family: 'Poppins', sans-serif;">Date for 1-4 Days</p>
+        </div>
+        <div class="ticket">
+            <img src="images/ds.jpg">
+            <p style="font-family: 'Poppins', sans-serif;">Date 1-Day with Shuttle</p>
+        </div>
+    </div>
+</div>
+
+<div class="fantasy" id="places">
+    <h2 style="font-family: 'Poppins', sans-serif;">A GOOD STORY CAN TAKE YOU ON A FANTASTIC JOURNEY</h2>
+    <div style="text-align: center;">
+        <img src="images/dl.jpg" style="width:70%; border-radius: 10px;">
+        <h3 style="font-family: 'Poppins', sans-serif;">FANTASY LAND</h3>
+        <p style="font-family: 'Poppins', sans-serif;">Fantasy Land is where your favorite fairy tales come to life. Enjoy enchanting rides and meet beloved characters.</p>
+    </div>
+    <h3 style="font-family: 'Poppins', sans-serif;">UNLOCK ALL ADVANTAGES</h3>
+    <div class="advantage">
+        <div class="box">
+            <h5>EXTRA MAGIC TIME</h5>
+            <p style="font-family: 'Poppins', sans-serif;">Enjoy exclusive access to attractions before the park opens or after it closes.</p>
+        </div>
+        <div class="box">
+            <h5>CLOSE TO THE PARKS</h5>
+            <p style="font-family: 'Poppins', sans-serif;">Stay at our partner hotels for easy access to the parks and special perks.</p>
+        </div>
+        <div class="box">
+            <h5>ACCESS TO BOTH PARKS</h5>
+            <p style="font-family: 'Poppins', sans-serif;">Get the most out of your visit with access to both Disneyland and Disney California Adventure.</p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p style="font-family: 'Poppins', sans-serif;">© 2025 Disneyland. All rights reserved. <br> 
+Address: 1313 Disneyland Dr, Anaheim, CA <br>
+Contact: (714) 781-4636 | info@disneyland.com </p>
+</footer>
+
+</body>
+</html>
