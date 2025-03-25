@@ -6,7 +6,7 @@
  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <style>
  body {
-background-color:black;
+background-color:#6485ab;
  color: white;
 font-family: 'Poppins', sans-serif; 
 margin: 0;
@@ -24,28 +24,43 @@ text-decoration: none;
  margin: 0 15px;
  }
 .banner {
-background-image: url('images/ddl.jpg');
+background-image: url('images/dl.jpg');
 background-repeat: no-repeat;
 background-size:100%;   
 height: 600px;
  display: flex;
 flex-direction: column;
-justify-content: center;
-align-items: center;
 text-align: center;
 }
 .banner h1 {
  font-family: 'Poppins', sans-serif;
  font-size: 70px;
- color: white;
+ color:#ff8396;
+text-shadow: 1px 1px 3px #000000;
  }
 .banner p {
   font-family: 'Poppins', sans-serif; 
 font-size: 20px;
-color: white;
+color:white;
+text-shadow: 2px 2px 4px #000000;
  }
-.about, .tickets, .fantasy, .advantage {
-padding: 50px;
+.about {
+padding:140px;
+text-align: center;
+ }
+.about h1 {
+font-size: 40px;
+color:#ffb6c1;
+text-shadow: 1px 1px 3px #000000;
+}
+.tickets h1{
+font-size: 40px;
+text-align: center;
+color:#ffb6c1;
+text-shadow: 1px 1px 3px #000000;
+}
+.tickets, .fantasy, .advantage {
+padding:50px;
  }
 .row {
   display: flex;
@@ -56,29 +71,44 @@ justify-content: space-around;
 text-align: center;
 border-radius: 10px;
  overflow: hidden;
- background:#d77a90;
+ background:#ff8396;
 padding: 10px;
  width: 25%;
  }
 .ticket img {
 width: 100%;
  }
+.fantasy p {
+padding:100px;
+ }
+.fantasy h1{
+font-size: 40px;
+text-align: center;
+color:#ffb6c1;
+text-shadow: 1px 1px 3px #000000;
+}
+
+.fantasy img{
+width:100%;
+border-radius: 10px;
+}
 .footer {
 text-align: center;
 padding: 20px;
- background-color:#d77a90;
+ background-color:#ffb6c1;
  }
 .box {
- background:#6485ab ;
+ background:#d77a90;
 padding: 10px;
  margin: 10px;
 border-radius: 10px;
 text-align: center;
- width: 30%;
+width: 30%;
 display: inline-block;
  }
  .advantage {
 text-align: center; 
+padding:50px;
  }
 
       
@@ -92,9 +122,16 @@ align-items: center;
 display:block;
 margin: 10px 0;
 }
+.about h1 {
+font-size: 30px;
+}
+.tickets h1{
+font-size: 30px;
+}
 .banner { height:200px;}
-.banner h1 { font-size:30px;}
-.banner p{ font-size: 15px;}
+.banner h1 { font-size:30px;
+}
+.banner p{ font-size: 10px;}
 .about{ 
 margin:0px 0;
 padding:5%;
@@ -106,6 +143,12 @@ padding:5%;
 .ticket, .box {
  width:100%;
 margin:10px 0;} 
+.fantasy h1{
+font-size:30px;
+}
+.fantasy p {
+padding:5px;
+ }
 
 .footer { 
 margin-bottom:20px;
@@ -131,12 +174,12 @@ padding:15px;}
 </div>
 
 <div class="about" id="about">
-    <h2 style="font-family: 'Poppins', sans-serif;">About Disneyland</h2>
+    <h1 style="font-family: 'Poppins', sans-serif;">ABOUT DISNEYLAND</h1>
     <p style="font-family: 'Poppins', sans-serif;">Disneyland, known as "The Happiest Place on Earth," is a world-famous theme park created by Walt Disney and opened in 1955 in Anaheim, California. It features iconic attractions like Sleeping Beauty Castle, Space Mountain, and Pirates of the Caribbean, along with themed lands that bring Disney stories to life. Visitors can enjoy thrilling rides, enchanting parades, dazzling fireworks, and meet beloved Disney characters. With its magical atmosphere, delicious food, and unforgettable experiences, Disneyland continues to be a dream destination for people of all ages worldwide. Disneyland is a magical place where dreams come true. Experience the joy and wonder of the happiest place on Earth.</p>
 </div>
 
 <div class="tickets" id="tickets">
-    <h2 style="font-family: 'Poppins', sans-serif;">TICKETS</h2>
+    <h1 style="font-family: 'Poppins', sans-serif;">TICKETS</h1>
     <div class="row">
 <div class="ticket">
             <img src="images/m.jpg">
@@ -155,14 +198,15 @@ padding:15px;}
 </div>
 
 <div class="fantasy" id="places">
-    <h2 style="font-family: 'Poppins', sans-serif;">A GOOD STORY CAN TAKE YOU ON A FANTASTIC JOURNEY</h2>
+    <h1 style="font-family: 'Poppins', sans-serif;">A GOOD STORY CAN TAKE YOU ON A FANTASTIC JOURNEY</h1>
     <div style="text-align: center;">
-        <img src="images/dl.jpg" style="width:70%; border-radius: 10px;">
-        <h3 style="font-family: 'Poppins', sans-serif;">FANTASY LAND</h3>
-        <p style="font-family: 'Poppins', sans-serif;">Fantasy Land is where your favorite fairy tales come to life. Enjoy enchanting rides and meet beloved characters.</p>
+        <img src="images/ddl.jpg"
+        <h3 style="font-family: 'Poppins', sans-serif;">FANTASY LAND</h3> 
+        <p style="font-family: 'Poppins', sans-serif;">Fantasy Land is where your favorite fairy tales come to life. Enjoy enchanting rides and meet beloved characters.Fantasyland in Disneyland is a whimsical realm where classic fairy tales come to life. With its charming medieval-style architecture, vibrant colors, and enchanting rides, it immerses visitors in the magic of Disney’s most beloved stories. Guests can fly over London with Peter Pan, spin in teacups at the Mad Hatter’s Tea Party, or journey through Snow White’s dark yet enchanting adventure. The iconic Sleeping Beauty Castle stands at its heart, serving as a gateway to a world where imagination knows no bounds. Fantasyland is a place where childhood dreams and fairy-tale wonder become reality.</p>
     </div>
-    <h3 style="font-family: 'Poppins', sans-serif;">UNLOCK ALL ADVANTAGES</h3>
+   
     <div class="advantage">
+<h1 style="font-family: 'Poppins', sans-serif;">UNLOCK ALL ADVANTAGES</h1>
         <div class="box">
             <h5>EXTRA MAGIC TIME</h5>
             <p style="font-family: 'Poppins', sans-serif;">Enjoy exclusive access to attractions before the park opens or after it closes.</p>
